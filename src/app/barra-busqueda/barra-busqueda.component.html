@@ -1,0 +1,59 @@
+<div class="containeer center-h center-v">
+  <form class="containeer center-h center-v maxWidth" (ngSubmit)="enviarDatos()" #myForm="ngForm">
+
+  	<div class="row maxWidth">
+  	
+  	<!--primer input Buscar -->
+  	<div class="col-sm child input-group ">
+  		<div class="input-group-prepend">
+    		<span class="input-group-text" id="basic-addon1">Busca</span>
+  		</div>
+  		<input type="text" class="form-control" placeholder="Hoteles,Restaurantes,etc..." maxlength="20" [(ngModel)]="value" name="value">
+	</div>
+	<!--segundo input En -->
+    <div class="col-sm child input-group ">
+  		<div class="input-group-prepend">
+    		<span class="input-group-text" id="basic-addon1">En</span>
+  		</div>
+
+  		<input type="text" class="form-control" placeholder="Huila,Bogotá,etc..." maxlength="10" [(ngModel)]="value1" name="value1">
+  		<!-- boton busqueda-->
+  		<div class="input-group-append">
+        <button type="submit" class="btn btn-outline-secondary"><i class="fa fa-search fa-lg"></i></button>
+  		</div>
+	</div>
+
+  	</div>
+</form> 
+</div>
+<!-- Listo mi servicio -->
+
+<!-- tabla -->
+<table class="table-hover containeer">
+    <tbody>
+    <tr *ngFor="let sitio of sitios" class="trR" > 
+      <td><img src='{{sitio.img}}' class="img-fluid" alt="Imagen Negocio"></td>
+      <td>
+        <h2>{{sitio.name}}</h2><b class="card-title">{{sitio.addres}}</b><br>
+        <p>{{sitio.owner}} asdasuahsuhduas ausdhuashduahsuduash aushudhaushud 
+          ashudhasuhduahsud aushduiahsudas daushduashdua  </p><a href="#" class="btn btn-outline-success">Visitar</a>
+      </td><!--Descripcion-->
+    </tr>
+    </tbody>
+    </table>
+
+    <!-- cards deck -->
+<div class="card-deck containeer">
+  
+
+    <div class="card" *ngFor="let sitio of sitios">
+      <img class="card-img-top img-fluid" src='{{sitio.img}}' alt="Imagen Negocio">
+      <div class="card-body">
+        <h5 class="card-title">{{sitio.name}}</h5>
+        <p class="card-text">{{sitio.owner}}</p><!--Descripcion-->
+        <b class="card-title">{{sitio.addres}}</b><a href="#" class="btn btn-outline-success float-right">Visitar</a>
+      </div>
+    </div>
+  
+  </div>
+  

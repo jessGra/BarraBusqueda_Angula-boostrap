@@ -1,0 +1,47 @@
+.fullwidth{
+    width: 100%;
+}
+.inputw{
+    width: 86%;
+}
+
+.tablaR,td{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse:collapse;
+    margin-bottom:1rem;
+    padding: .75rem;
+}
+.trR{border-bottom: 1px solid #dee2e6;}
+
+.formBar{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.containeer {
+    margin: 1rem 1rem 1rem 1rem;
+    display: flex;
+    /* align-items por defecto tiene el valor `stretch` */
+    align-items: start;
+  }
+  
+  .child {
+    background: #60e0b0;
+    padding: .2rem;
+    text-align: center;
+  }
+  
+  .center-h {
+    justify-content: center;
+  }
+  .center-v {
+    align-items: center;
+  }
+  .maxWidth{
+      width:100%;
+  }
+  .maxHeight{
+      height:100%;
+  }
