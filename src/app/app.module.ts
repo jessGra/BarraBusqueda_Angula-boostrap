@@ -10,11 +10,13 @@ import { HttpClientModule } from '@angular/common/http';//necesario para consumi
 
 
 import { BarraBusquedaComponent } from './barra-busqueda/barra-busqueda.component';
+import { CommentsBoxComponent } from './comments-box/comments-box.component';
 @NgModule({
   declarations: [
     AppComponent,
     myFormComponent,
-    BarraBusquedaComponent//componente formulario
+    BarraBusquedaComponent,
+    CommentsBoxComponent//componente formulario
   ],
   imports: [
     BrowserModule,
